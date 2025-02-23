@@ -45,7 +45,7 @@ You should see two containers running:
     url-shortener-app (The main Go application)
     redis (Redis database)
 
-### 📤 Shorten a URL (via API using `curl`)
+### Shorten a URL (via API using `curl`)
 
 You can also use a `curl` command to shorten a URL from the terminal:
 
