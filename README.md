@@ -27,3 +27,29 @@ Before running the project, ensure you have the following installed:
 ```bash
 git clone https://github.com/phonezriend/url-shortener.git
 cd url-shortener
+```
+
+2. **Build and run the project using Docker Compose:**
+
+```bash
+docker-compose up --build -d
+```
+
+3. **Check running containers:**
+
+```bash
+docker ps
+```
+You should see two containers running:
+
+    url-shortener-app (The main Go application)
+    redis (Redis database)
+
+### 📤 Shorten a URL (via API using `curl`)
+
+You can also use a `curl` command to shorten a URL from the terminal:
+
+```bash
+curl -X POST http://localhost/shorten \
+-H "Content-Type: application/json" \
+-d "{\"url\": \"https://example.com/very/long/url\"}"
