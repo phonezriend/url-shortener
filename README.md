@@ -25,5 +25,5 @@ Before running the project, ensure you have the following installed:
 1. **Clone this repository:**
 
 ```bash
-git clone https://github.com/yourusername/url-shortener.git
+git clone https://github.com/phonezriend/url-shortener.git
 cd url-shortener
