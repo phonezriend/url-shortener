@@ -14,7 +14,9 @@ var ctx = context.Background()
 
 // Connect Redis
 var rdb = redis.NewClient(&redis.Options{
-	Addr: "localhost:6379",
+	Addr:     "redis:6379", // Change to localhost:6379 if you wanna change to local hosting
+	Password: "",
+	DB:       0,
 })
 
 type ShortenRequest struct {
