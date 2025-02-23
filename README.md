@@ -50,6 +50,5 @@ You should see two containers running:
 You can also use a `curl` command to shorten a URL from the terminal:
 
 ```bash
-curl -X POST http://localhost/shorten \
--H "Content-Type: application/json" \
--d "{\"url\": \"https://example.com/very/long/url\"}"
+curl -X POST http://localhost:8080/shorten -H "Content-Type: application/json" -d "{\"url\": \"https://example.com/very/long/url\"}"
+```
